@@ -1,0 +1,38 @@
+
+Seorang guru digaji berdasarkan ketentuan sbb:
+Gaji pokok = 4.000.000, uang makan per hari = 30.000 diberikan setiap masuk kerja, tunjangan fungsional = 900.000, total hari kerja = 25 hari, tunjangan sergur sama dengan gaji pokok. Tunjangan keluarga = 10% dari gaji pokok, pajak = 5% dari total gaji. Buatlah proses aritmatika, algoritma dengan flowchart program untuk menghitung gaji bersihnya!
+Jawaban
+1. Langkah algoritma
+- Mulai (start)
+- Masukan gaji pokok = 4.000.000
+- Masukan total gaji = gaji pokok + tunjangan
+- Masukan uang makan dikali dengan total hari kerja = 30.000 x 25 hari = 750.000
+- Tunjangan fungsional sergur = 4.000.000
+- Masukan tunjangan keluarga = 10 % x 4.000.000 = 400.000
+- Masukan pajak = 5% x 4.000.000 = 200.000
+- Hitung gaji bersih 
+-Tampil gaji bersih 
+Selesai (end)
+
+2. Program 
+Scanner masukan = new Scanner (System.in);
+Double menghitunggajihbersih,gajihpokok,uangmakanharian,tunjanganfungsional,totalkerja,tunjangansergur,tunjangankeluarga,pajak,gajihbersih;
+System.out.print("gajih pokok=");
+gajihpokok = masukan.nextDouble ();
+System.out.print("uang makan harian =");
+uangmakanharian = masukan.nextDouble ();
+System.out.print("tunjang fungsional =");
+tunjanganfungsional = masukan.nextDouble();
+System.out.print("total kerja =");
+totalkerja = masukan.nextDouble();
+System.out.print("tunjangan sergur");
+tunjangansergur = masukan.nextDouble();
+System.out.print("tunjangan keluarga=");
+tunjangankeluarga = masukan.nextDouble();
+System.out.print("pajak=");
+pajak = masukan.nextDouble();
+System.out.print("gajih bersih=");
+gajihbersih = masukan.nextDouble();
+menghitunggajihbersih = (gajihpokok + uangmakanharian * totalkerja + tunjangansergur + tunjangankeluarga - pajak);
+System.out.print("menghitung gajih bersih");
+System.out.print(menghitunggajihbersih);
